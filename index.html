@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Farkhan</title>
+    
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Logo yang bisa diklik untuk kembali ke paling atas -->
+    <div class="logo" onclick="manualScrollTo('home')">&lt;/&gt;</div>
+
+    <div class="container">
+        
+        <!-- HOME SECTION -->
+        <div id="home" class="page-section">
+            <div class="home-content font-main reveal-content">
+                <h1>&lt;/HELLO I'M FARKHAN&gt;</h1>
+                <p class="subtitle">A Computer Engineer Student</p>
+                <div class="divider"></div>
+                <p class="prompt-text">Start Scrolling or Click Below</p>
+                
+                <div class="buttons-grid">
+                    <button class="nav-btn" onclick="manualScrollTo('biodata')">Biodata</button>
+                    <button class="nav-btn" onclick="manualScrollTo('projects')">Projects</button>
+                    <button class="nav-btn" onclick="manualScrollTo('academic')">Academic</button>
+                    <button class="nav-btn" onclick="manualScrollTo('contact')">Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIODATA SECTION -->
+        <div id="biodata" class="page-section">
+            <div class="reveal-content"> 
+                <header class="content-header">
+                    <h2>BIODATA</h2>
+                    <button class="back-btn" onclick="manualScrollTo('home')">Back to Top</button>
+                </header>
+                
+                <div class="biodata-layout">
+                    <div class="info-group font-profile">
+                        <p><strong>Name:</strong> Muhammad Farkhan Fadillah</p>
+                        <p style="margin-top: 10px;"><strong>Role:</strong> Computer Engineer</p>
+                        <p style="margin-top: 10px;"><strong>Location:</strong> Indonesia</p>
+                        <br>
+                        <p style="line-height: 1.6;">I am a passionate individual dedicated to creating clean,
+                            efficient code and delightful user experiences. 
+                            I specialize in turning complex problems into simple, beautiful, 
+                            and intuitive designs.</p>
+
+                        <p style="line-height: 1.6; margin-top: 15px;">I love tuning project that include Artificial Intelegence
+                            and Machine Learning to create smart applications that can learn 
+                            and adapt to user needs. My goal is to leverage technology 
+                            to make a positive impact on people's lives.
+                        </p>
+                    </div>
+
+                    <div class="biodata-image">
+                        <img src="images/photoprofile.svg" alt="Farkhan Profile" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div id="projects" class="page-section">
+            <div class="reveal-content"> 
+                <header class="content-header">
+                    <h2>PROJECTS</h2>
+                    <button class="back-btn" onclick="manualScrollTo('home')">Back to Top</button>
+                </header>
+
+                <div class="project-card">
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>Web Development • 2023</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">A comprehensive dashboard for managing online store inventory and sales analytics.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Template</h3>
+                    <p>Design & Frontend • 2024</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">A minimalist, retro-styled portfolio template built with raw HTML and CSS.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACADEMIC HISTORY SECTION -->
+        <div id="academic" class="page-section">
+            <div class="reveal-content"> 
+                <header class="content-header">
+                    <h2>ACADEMIC</h2>
+                    <button class="back-btn" onclick="manualScrollTo('home')">Back to Top</button>
+                </header>
+
+                <div class="academic-card">
+                    <h3>Master of Computer Science</h3>
+                    <p>University of Technology • 2020 - 2022</p>
+                </div>
+                
+                <div class="academic-card">
+                    <h3>Bachelor of Informatics</h3>
+                    <p>State University • 2016 - 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="page-section">
+            <div class="reveal-content"> 
+                <header class="content-header">
+                    <h2>CONTACT</h2>
+                    <button class="back-btn" onclick="manualScrollTo('home')">Back to Top</button>
+                </header>
+
+                <div class="contact-container">
+                    <div class="contact-card" onclick="window.open('https://www.instagram.com/Apricot_Schwein/', '_blank')">
+                        <div class="image_contact">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+                        </div>
+                        <div class="contact-info">
+                            <h3>Instagram</h3>
+                            <p>@Apricot_Schwein</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" onclick="window.location.href = 'mailto:Apricotschwein@gmail.com'">
+                        <div class="image_contact">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Email Logo">
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>Apricotschwein@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" onclick="window.open('https://www.linkedin.com/in/farkhanfadillah/', '_blank')">
+                        <div class="image_contact">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin Logo">
+                        </div>
+                        <div class="contact-info">
+                            <h3>Linkedin</h3>
+                            <p>Muhammad Farkhan Fadillah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 
+      ========================================
+      BAGIAN JAVASCRIPT (MANUAL SCROLL LOGIC)
+      ========================================
+    -->
+    <script>
+        // FIX RELOAD POSITION:
+        // Memaksa browser untuk scroll ke paling atas saat halaman di-reload.
+        // Ini mengatasi masalah "rada kebawah sedikit" saat refresh.
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+        window.onload = function() {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 10);
+        };
+
+
+        // Fungsi Manual Scroll dengan Animasi JavaScript
+        function manualScrollTo(targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (!targetElement) return;
+
+            // FIX SCROLL POSITION:
+            // Saya ubah offset menjadi 10 (sebelumnya 40).
+            // Semakin KECIL angkanya, semakin BAWAH (deep) scroll-nya berhenti.
+            // Jika Anda ingin lebih turun lagi, ubah jadi 0 atau -20.
+            const offset = 0; 
+
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const startPosition = window.pageYOffset;
+            const targetPosition = startPosition + elementPosition - offset;
+            
+            const distance = targetPosition - startPosition;
+            const duration = 1500; 
+            let startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                
+                const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+                
+                window.scrollTo(0, run);
+
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animation);
+                }
+            }
+
+            function easeInOutCubic(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t * t + b;
+                t -= 2;
+                return c / 2 * (t * t * t + 2) + b;
+            }
+
+            requestAnimationFrame(animation);
+        }
+
+        // Intersection Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        const hiddenElements = document.querySelectorAll('.reveal-content');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
